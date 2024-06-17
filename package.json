@@ -12,7 +12,7 @@
     "lint": "pnpm eslint && pnpm prettier",
     "lint:fix": "pnpm eslint:fix && pnpm prettier:fix",
     "prepare": "husky install",
-    "postinstall": "node setup.mjs"
+    "postinstall": "node setup.js"
   },
   "keywords": [],
   "author": "",
