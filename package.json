@@ -1,8 +1,8 @@
 {
   "name": "my-lint-commit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "eslint.config.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint": "eslint src/** --ext .js, .jsx, .ts, .tsx --cache",
@@ -11,7 +11,8 @@
     "prettier:fix": "prettier --write .",
     "lint": "pnpm eslint && pnpm prettier",
     "lint:fix": "pnpm eslint:fix && pnpm prettier:fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "postinstall": "node setup.mjs"
   },
   "keywords": [],
   "author": "",
