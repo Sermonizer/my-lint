@@ -1,6 +1,6 @@
 {
   "name": "my-lint-commit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "eslint.config.mjs",
   "scripts": {
@@ -12,7 +12,7 @@
     "lint": "pnpm eslint && pnpm prettier",
     "lint:fix": "pnpm eslint:fix && pnpm prettier:fix",
     "prepare": "husky install",
-    "postinstall": "node setup.js"
+    "postinstall": "node setup.mjs"
   },
   "keywords": [],
   "author": "",
